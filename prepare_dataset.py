@@ -4,7 +4,7 @@ import shutil
 import sys
 
 # === Настройка: укажи путь к Food-101 ВНЕ репозитория ===
-FOOD101_SOURCE = "/root/datasets/food-101"  # ← ИЗМЕНИ НА СВОЙ ПУТЬ!
+FOOD101_SOURCE = "/root/datasets/food-101/food-101"  # ← ИЗМЕНИ НА СВОЙ ПУТЬ!
 OUTPUT_DIR = "data/food-101-split"  # внутри репозитория (но в .gitignore)
 
 def main():
