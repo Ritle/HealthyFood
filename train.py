@@ -9,7 +9,7 @@ import os
 # === Настройки ===
 DATA_DIR = "data/food-101-split"
 NUM_CLASSES = 101
-BATCH_SIZE = 32
+BATCH_SIZE = 8
 EPOCHS = 5  # для начала можно 5–10 эпох
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
