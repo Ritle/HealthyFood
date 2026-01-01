@@ -2,7 +2,7 @@
 import os
 import shutil
 import sys
-from os.path import join
+
 
 # === Настройка: укажи путь к Food-101 ВНЕ репозитория ===
 FOOD101_SOURCE = "/root/datasets/food-101/food-101"  # ← ИЗМЕНИ НА СВОЙ ПУТЬ!
@@ -30,7 +30,7 @@ def main():
         os.makedirs(f"{OUTPUT_DIR}/test/{cls}", exist_ok=True)
 
     def copy_split(split_name):
-        list_file = os.path(join(FOOD101_SOURCE, "meta", f"{split_name}.txt"))
+        list_file = os.path.join(FOOD101_SOURCE, "meta", f"{split_name}.txt")
         if not os.path.exists(list_file):
             print(f"⚠️  Пропущен: {split_name}.txt")
             return
